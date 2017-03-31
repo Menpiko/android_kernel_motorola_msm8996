@@ -1,0 +1,39 @@
+# FSG
+type fsg_file, fs_type, contextmount_type;
+
+# sysfs
+type sysfs_homebutton, fs_type, sysfs_type;
+type sysfs_mmi_touch, fs_type, sysfs_type;
+
+# Battery health
+type batt_health_data_file, file_type, data_file_type;
+type sysfs_batt_health, fs_type, sysfs_type;
+
+# hw_revs
+type hw_revs_data_file, file_type, data_file_type;
+
+# charge_only_mode
+type chargeonly_data_file, file_type, data_file_type;
+
+# Cutback socket (RILD)
+type cutback_data_file, file_type, data_file_type;
+
+# CMHW
+type vibeamp_sysfs, fs_type, sysfs_type;
+
+# Greybus
+type sysfs_greybus, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_greybus_media, fs_type, sysfs_type, mlstrustedobject;
+type gbfirmware_file, file_type, data_file_type, mlstrustedobject;
+type sysfs_mods_camd, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_v4l2_openmode, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_batt_mods, fs_type, sysfs_type, mlstrustedobject;
+
+# adspd
+type adspd_file, file_type, data_file_type;
+
+type chr_file, file_type, data_file_type;
+type fpc_data_file, file_type, data_file_type;
+type fps_data_file, file_type, data_file_type;
+type fpc_socket, file_type;
+type sysfs_fpc, fs_type, sysfs_type;
