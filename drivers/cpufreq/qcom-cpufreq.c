@@ -49,7 +49,7 @@ static int __init cpufreq_read_cpu_max_c1(char *cpu_max_c1)
 }
 __setup("cpu_max_c1=", cpufreq_read_cpu_max_c1);
 
-static unsigned long arg_cpu_max_c2 = 2150400;
+static unsigned long arg_cpu_max_c2 = 1824000;
 
 static int __init cpufreq_read_cpu_max_c2(char *cpu_max_c2)
 {
@@ -548,3 +548,4 @@ static int __init msm_cpufreq_early_register(void)
 	return register_hotcpu_notifier(&msm_cpufreq_cpu_notifier);
 }
 core_initcall(msm_cpufreq_early_register);
+
